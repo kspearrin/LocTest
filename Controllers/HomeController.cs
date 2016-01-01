@@ -9,7 +9,7 @@ namespace LocTest.Controllers
 {
     public class HomeController : Controller
     {
-        //private readonly IHtmlLocalizer _localizer;
+        private readonly IHtmlLocalizer _localizer;
 
         public HomeController(/*IHtmlLocalizer localizer*/)
         {
@@ -18,6 +18,8 @@ namespace LocTest.Controllers
 
         public IActionResult Index()
         {
+            //ViewData["HelloString"] = _localizer["Hello"];
+
             return View();
         }
 
@@ -30,6 +32,8 @@ namespace LocTest.Controllers
 
         public IActionResult Contact()
         {
+            //ViewData["HelloString"] = _localizer["Hello"];
+
             return View();
         }
 
